@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Hustle Blueprint</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous"></script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Lora', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6D28D9',
+                        'primary-hover': '#5B21B6',
+                        accent: '#10B981',
+                        accent2: '#22C55E',
+                        accent3: '#FBBF24',
+                        accent4: '#EF4444',
+                        'dark-text': '#111827',
+                        'gray-text': '#4B5563',
+                        'light-bg': '#F9FAFB',
+                        'dark-bg': '#111827',
+                        'light-border': '#E5E7EB',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-light-bg font-sans text-dark-text">
+
+    <!-- Header -->
+<header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20 lg:h-24"> <!-- Reduced height -->
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2884ab59-e89e-4b9c-3888-d8e65c51f400/publicContain" alt="Hustle Blueprint Logo" class="h-16 lg:h-20 py-1">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-6 lg:space-x-8">
+                <a href="index.html#about" class="text-dark-text hover:text-primary font-medium text-sm lg:text-base transition-colors">About</a>
+                <a href="buy-ebook.html" class="text-dark-text hover:text-primary font-medium text-sm lg:text-base transition-colors">Buy Ebook</a>
+                <a href="testimonials.html" class="text-dark-text hover:text-primary font-medium text-sm lg:text-base transition-colors">Testimonials</a>
+                <a href="index.html#faqs" class="text-dark-text hover:text-primary font-medium text-sm lg:text-base transition-colors">FAQs</a>
+                <a href="buy-ebook.html" class="bg-primary text-white px-5 py-2.5 lg:px-6 lg:py-3 rounded-lg font-semibold text-sm lg:text-base hover:bg-primary-hover transition-all transform hover:scale-105 shadow-lg">Get The Hustle Blueprint</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="lg:hidden text-dark-text p-2 hover:bg-gray-100 rounded-full transition-colors">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden lg:hidden bg-white border-t border-light-border pb-4 lg:pb-0">
+            <div class="flex flex-col space-y-2 px-4 pt-4">
+                <a href="index.html#about" class="text-dark-text hover:text-primary font-medium py-3 px-4 rounded-lg transition-colors hover:bg-gray-50">About</a>
+                <a href="buy-ebook.html" class="text-dark-text hover:text-primary font-medium py-3 px-4 rounded-lg transition-colors hover:bg-gray-50">Buy Ebook</a>
+                <a href="testimonials.html" class="text-dark-text hover:text-primary font-medium py-3 px-4 rounded-lg transition-colors hover:bg-gray-50">Testimonials</a>
+                <a href="index.html#faqs" class="text-dark-text hover:text-primary font-medium py-3 px-4 rounded-lg transition-colors hover:bg-gray-50">FAQs</a>
+                <a href="buy-ebook.html" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-primary-hover transition-all shadow-lg mt-2">Get The Hustle Blueprint</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<script>
+    // Mobile menu toggle
+    const toggleBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-primary-hover text-white py-20 lg:py-28">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                What Kenyan Hustlers Are Saying
+            </h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                Real stories from real people who have transformed their income using the Hustle Blueprint strategies
+            </p>
+            <div class="flex items-center justify-center gap-2 mt-8">
+                <div class="flex text-accent3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-lg font-semibold">4.9/5 from 500+ hustlers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="py-16 lg:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Brian Otieno</h4>
+                            <p class="text-gray-text text-sm">Nairobi, Student</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "As a final year student, I was worried about unemployment. Within 2 months of applying the freelancing strategies in Hustle Blueprint, I'm now earning KSh 45,000 monthly on Upwork. This book changed everything!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Mercy Wanjiku</h4>
+                            <p class="text-gray-text text-sm">Mombasa, Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "I started my YouTube channel with zero knowledge. The step-by-step guide on monetization helped me hit my first KSh 100,000 in 4 months. Ed really knows the Kenyan digital space!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Kevin Mwangi</h4>
+                            <p class="text-gray-text text-sm">Eldoret, Recent Graduate</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "Best investment I've ever made. The low-capital strategies allowed me to start with just my phone. Now running two income streams earning over KSh 80,000 monthly. Worth every shilling!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Faith Chepkoech</h4>
+                            <p class="text-gray-text text-sm">Kisumu, Freelancer</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "The payment section alone is gold – learning how to receive dollars via PayPal and withdraw to M-Pesa changed my life. I'm now a full-time digital marketer earning in dollars from Kenya."
+                    </p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Dennis Kamau</h4>
+                            <p class="text-gray-text text-sm">Nakuru, Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "No fluff, just pure actionable steps. I implemented the e-commerce strategy and made my first sale within a week. Now scaling to multiple streams. Thank you Ed!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-lg">Sarah Achieng</h4>
+                            <p class="text-gray-text text-sm">Nairobi, Side Hustler</p>
+                        </div>
+                    </div>
+                    <div class="flex text-accent3 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-text leading-relaxed italic">
+                        "As a single mom, I needed something flexible. The Blueprint showed me how to build income around my schedule. Now earning consistently without leaving my kids. Life-changing!"
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-br from-light-bg to-white py-16 lg:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Write Your Own Success Story?
+            </h2>
+            <p class="text-xl text-gray-text mb-10 max-w-2xl mx-auto">
+                Join hundreds of Kenyan hustlers who are building real wealth in the digital economy
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="buy-ebook.html" class="bg-primary text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-primary-hover transition-all transform hover:scale-105 shadow-xl inline-flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-shopping-cart"></i> Get Hustle Blueprint Now - KSh 1,999
+                </a>
+                <a href="index.html" class="bg-white text-primary px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-50 transition-all shadow-xl border-2 border-primary">
+                    Learn More About the Book
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-gray-text">
+                Pay safely via M-Pesa Till Number <strong>4178866</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-dark-bg text-white py-10 lg:py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 lg:mb-12">
+            <!-- Brand -->
+            <div class="sm:col-span-2 lg:col-span-1">
+                <a href="index.html" class="inline-block mb-5">
+                    <img src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2884ab59-e89e-4b9c-3888-d8e65c51f400/publicContain" alt="Hustle Blueprint Logo" class="h-20 py-1">
+                </a>
+                <p class="opacity-80 text-sm lg:text-base mb-6 leading-relaxed">
+                    Unlock Financial Freedom in Africa's Digital Age. Your step-by-step guide to building sustainable income streams.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-facebook-f text-lg"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-twitter text-lg"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="#" class="bg-white bg-opacity-10 hover:bg-opacity-20 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="font-bold text-base lg:text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-3 text-sm lg:text-base">
+                    <li><a href="index.html" class="opacity-80 hover:text-white transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="opacity-80 hover:text-white transition-colors">About</a></li>
+                    <li><a href="buy-ebook.html" class="opacity-80 hover:text-white transition-colors">Buy Ebook</a></li>
+                    <li><a href="testimonials.html" class="opacity-80 hover:text-white transition-colors">Testimonials</a></li>
+                    <li><a href="index.html#faqs" class="opacity-80 hover:text-white transition-colors">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div>
+                <h3 class="font-bold text-base lg:text-lg mb-4">Support</h3>
+                <ul class="space-y-3 text-sm lg:text-base">
+                    <li><a href="index.html#contact" class="opacity-80 hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-white transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-white transition-colors">Terms and Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="font-bold text-base lg:text-lg mb-4">Get In Touch</h3>
+                <ul class="space-y-3 text-sm lg:text-base">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope text-accent mt-1"></i>
+                        <a href="mailto:info@hustleblueprint.com" class="opacity-80 hover:text-white transition-colors">info@hustleblueprint.com</a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone text-accent mt-1"></i>
+                        <span class="opacity-80">+254 700 000 000</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-accent mt-1"></i>
+                        <span class="opacity-80">Nairobi, Kenya</span>
+                    </li>
+                    <li class="flex items-start gap-3 mt-4">
+                        <i class="fa-solid fa-money-bill-wave text-accent mt-1"></i>
+                        <span class="opacity-80">M-Pesa Till: <strong class="text-white">4178866</strong></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white border-opacity-20 pt-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+                <p class="opacity-80 text-center md:text-left">
+                    © 2025 Hustle Blueprint. All rights reserved.
+                </p>
+                <div class="flex items-center gap-2 opacity-80">
+                    <i class="fa-solid fa-heart text-accent4"></i>
+                    <span>Made with passion in Kenya</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
